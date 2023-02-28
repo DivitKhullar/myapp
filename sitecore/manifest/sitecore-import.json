@@ -1,0 +1,787 @@
+{
+  "templates": [
+    {
+      "name": "ExampleCustomRouteType",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "author",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ],
+      "route": true,
+      "defaultRoute": false,
+      "allFields": [
+        {
+          "name": "headline",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "author",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ]
+    },
+    {
+      "name": "App Route",
+      "displayName": "App Route",
+      "fields": [
+        {
+          "name": "pageTitle",
+          "displayName": "Page Title",
+          "section": "Page Metadata",
+          "type": "Single-Line Text"
+        }
+      ],
+      "insertOptions": [
+        "App Route"
+      ],
+      "route": false,
+      "defaultRoute": true
+    },
+    {
+      "name": "Styleguide-ContentList-Item-Template",
+      "fields": [
+        {
+          "name": "textField",
+          "type": "Single-Line Text"
+        }
+      ],
+      "route": false,
+      "defaultRoute": false,
+      "allFields": [
+        {
+          "name": "textField",
+          "type": "Single-Line Text"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-Explanatory-Component",
+      "id": "styleguide-explanatory-component-template",
+      "fields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "description",
+          "type": "Rich Text"
+        }
+      ],
+      "route": false,
+      "defaultRoute": false
+    },
+    {
+      "name": "Styleguide-ItemLink-Item-Template",
+      "fields": [
+        {
+          "name": "textField",
+          "type": "Single-Line Text"
+        }
+      ],
+      "route": false,
+      "defaultRoute": false,
+      "allFields": [
+        {
+          "name": "textField",
+          "type": "Single-Line Text"
+        }
+      ]
+    },
+    {
+      "name": "ContentBlock",
+      "icon": "Office/16x16/document_tag.png",
+      "fields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Checkbox",
+      "icon": "Office/16x16/checkbox_selected.png",
+      "fields": [
+        {
+          "name": "checkbox",
+          "type": "Checkbox"
+        },
+        {
+          "name": "checkbox2",
+          "type": "Checkbox"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "checkbox",
+          "type": "Checkbox"
+        },
+        {
+          "name": "checkbox2",
+          "type": "Checkbox"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-ContentList",
+      "icon": "Office/16x16/list_style_numbered.png",
+      "fields": [
+        {
+          "name": "sharedContentList",
+          "type": "Treelist",
+          "source": "dataSource=/sitecore/content/myapp/Content/Styleguide/ContentListField"
+        },
+        {
+          "name": "localContentList",
+          "type": "Treelist"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sharedContentList",
+          "type": "Treelist",
+          "source": "dataSource=/sitecore/content/myapp/Content/Styleguide/ContentListField"
+        },
+        {
+          "name": "localContentList",
+          "type": "Treelist"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Custom",
+      "icon": "Office/16x16/gearwheel.png",
+      "fields": [
+        {
+          "name": "customIntField",
+          "type": "Integer"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "customIntField",
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Date",
+      "icon": "Office/16x16/clock.png",
+      "fields": [
+        {
+          "name": "date",
+          "type": "Date"
+        },
+        {
+          "name": "dateTime",
+          "type": "Datetime"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "date",
+          "type": "Date"
+        },
+        {
+          "name": "dateTime",
+          "type": "Datetime"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-File",
+      "icon": "Office/16x16/floppy_disk.png",
+      "fields": [
+        {
+          "name": "file",
+          "type": "File"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "file",
+          "type": "File"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Image",
+      "icon": "Office/16x16/photo_portrait.png",
+      "fields": [
+        {
+          "name": "sample1",
+          "type": "Image"
+        },
+        {
+          "name": "sample2",
+          "type": "Image"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sample1",
+          "type": "Image"
+        },
+        {
+          "name": "sample2",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-ItemLink",
+      "icon": "Office/16x16/link.png",
+      "fields": [
+        {
+          "name": "sharedItemLink",
+          "type": "Droptree",
+          "source": "dataSource=/sitecore/content/myapp/Content/Styleguide/ItemLinkField"
+        },
+        {
+          "name": "localItemLink",
+          "type": "Droptree"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sharedItemLink",
+          "type": "Droptree",
+          "source": "dataSource=/sitecore/content/myapp/Content/Styleguide/ItemLinkField"
+        },
+        {
+          "name": "localItemLink",
+          "type": "Droptree"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Link",
+      "icon": "Office/16x16/link.png",
+      "fields": [
+        {
+          "name": "externalLink",
+          "type": "General Link"
+        },
+        {
+          "name": "internalLink",
+          "type": "General Link"
+        },
+        {
+          "name": "emailLink",
+          "type": "General Link"
+        },
+        {
+          "name": "paramsLink",
+          "type": "General Link"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "externalLink",
+          "type": "General Link"
+        },
+        {
+          "name": "internalLink",
+          "type": "General Link"
+        },
+        {
+          "name": "emailLink",
+          "type": "General Link"
+        },
+        {
+          "name": "paramsLink",
+          "type": "General Link"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Number",
+      "icon": "Office/16x16/numbers_field.png",
+      "fields": [
+        {
+          "name": "sample",
+          "type": "Number"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sample",
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-RichText",
+      "icon": "Office/16x16/text_field.png",
+      "fields": [
+        {
+          "name": "sample",
+          "type": "Rich Text"
+        },
+        {
+          "name": "sample2",
+          "displayName": "Customize Name Shown in Sitecore",
+          "required": true,
+          "type": "Rich Text"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sample",
+          "type": "Rich Text"
+        },
+        {
+          "name": "sample2",
+          "displayName": "Customize Name Shown in Sitecore",
+          "required": true,
+          "type": "Rich Text"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-FieldUsage-Text",
+      "icon": "Office/16x16/text.png",
+      "fields": [
+        {
+          "name": "sample",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "displayName": "Customize Name Shown in Sitecore",
+          "required": true,
+          "type": "Single-Line Text"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sample",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "displayName": "Customize Name Shown in Sitecore",
+          "required": true,
+          "type": "Single-Line Text"
+        }
+      ]
+    },
+    {
+      "name": "GraphQL-ConnectedDemo",
+      "icon": "Office/16x16/graph_connection_directed.png",
+      "fields": [
+        {
+          "name": "sample1",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "type": "General Link"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "sample1",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "type": "General Link"
+        }
+      ]
+    },
+    {
+      "name": "GraphQL-IntegratedDemo",
+      "icon": "Office/16x16/graph_connection_directed.png",
+      "fields": [
+        {
+          "name": "sample1",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "type": "General Link"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "sample1",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "sample2",
+          "type": "General Link"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-ComponentParams",
+      "icon": "Office/16x16/window_dialog.png",
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": []
+    },
+    {
+      "name": "Styleguide-Layout-Reuse",
+      "icon": "Office/16x16/documents_exchange.png",
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": []
+    },
+    {
+      "name": "Styleguide-Layout-Tabs-Tab",
+      "icon": "Office/16x16/tab_pane.png",
+      "fields": [
+        {
+          "name": "title",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "title",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-Layout-Tabs",
+      "icon": "Office/16x16/document_tag.png",
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": []
+    },
+    {
+      "name": "Styleguide-Multilingual",
+      "icon": "Office/16x16/flag_generic.png",
+      "fields": [
+        {
+          "name": "sample",
+          "type": "Single-Line Text",
+          "displayName": "This field has a translated value"
+        }
+      ],
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": [
+        {
+          "name": "sample",
+          "type": "Single-Line Text",
+          "displayName": "This field has a translated value"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-RouteFields",
+      "icon": "Office/16x16/text_field.png",
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": []
+    },
+    {
+      "name": "Styleguide-Section",
+      "icon": "Office/16x16/document_tag.png",
+      "fields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        }
+      ]
+    },
+    {
+      "name": "Styleguide-SitecoreContext",
+      "icon": "Office/16x16/control_panel.png",
+      "inherits": [
+        "styleguide-explanatory-component-template"
+      ],
+      "allFields": []
+    }
+  ],
+  "placeholders": [
+    {
+      "name": "jss-main",
+      "displayName": "Main"
+    },
+    {
+      "name": "jss-tabs",
+      "displayName": "Tabs",
+      "id": "tabs-placeholder"
+    },
+    {
+      "name": "jss-graphql-layout"
+    },
+    {
+      "name": "jss-styleguide-layout"
+    },
+    {
+      "name": "jss-styleguide-section"
+    },
+    {
+      "name": "jss-header"
+    },
+    {
+      "name": "jss-reuse-example"
+    }
+  ],
+  "appName": "myapp",
+  "language": "en",
+  "renderings": [
+    {
+      "name": "ContentBlock",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "ContentBlock"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Checkbox",
+      "icon": "Office/16x16/checkbox_selected.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Checkbox"
+    },
+    {
+      "name": "Styleguide-FieldUsage-ContentList",
+      "icon": "Office/16x16/list_style_numbered.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-ContentList"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Custom",
+      "icon": "Office/16x16/gearwheel.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Custom"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Date",
+      "icon": "Office/16x16/clock.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Date"
+    },
+    {
+      "name": "Styleguide-FieldUsage-File",
+      "icon": "Office/16x16/floppy_disk.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-File"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Image",
+      "icon": "Office/16x16/photo_portrait.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Image"
+    },
+    {
+      "name": "Styleguide-FieldUsage-ItemLink",
+      "icon": "Office/16x16/link.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-ItemLink"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Link",
+      "icon": "Office/16x16/link.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Link"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Number",
+      "icon": "Office/16x16/numbers_field.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Number"
+    },
+    {
+      "name": "Styleguide-FieldUsage-RichText",
+      "icon": "Office/16x16/text_field.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-RichText"
+    },
+    {
+      "name": "Styleguide-FieldUsage-Text",
+      "icon": "Office/16x16/text.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-FieldUsage-Text"
+    },
+    {
+      "name": "GraphQL-ConnectedDemo",
+      "icon": "Office/16x16/graph_connection_directed.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "GraphQL-ConnectedDemo"
+    },
+    {
+      "name": "GraphQL-IntegratedDemo",
+      "icon": "Office/16x16/graph_connection_directed.png",
+      "graphQLQuery": "# This file contains a GraphQL query that will be executed and the result provided to\n# your JSS component. You can run this query in GraphiQL ($endpoint/ui) for a nice editing experience.\n\n# Note that we're executing _two queries_ (datasource and contextItem)\n# within the context of the IntegratedDemoQuery _operation_. This makes it\n# very efficient at gathering data from multiple sources.\n\nquery IntegratedDemoQuery($datasource: String!, $contextItem: String!, $language: String!) {\n  # Datasource query\n  # $datasource will always be set to the ID of the rendering's datasource item\n  # (as long as the GraphQLData helper is used)\n  datasource: item(path: $datasource, language: $language) {\n    id\n    name\n    # Strongly-typed querying on known templates is possible!\n    ...on GraphQLIntegratedDemo {\n      # Single-line text field\n      sample1 {\n        # the 'jsonValue' field is a JSON blob that represents the object that\n        # should be passed to JSS field rendering helpers (i.e. text, image, link)\n        jsonValue\n        value\n      }\n      # General Link field\n      sample2 {\n        jsonValue\n        # Structured querying of the field's values is possible\n        text\n        target\n        url\n        # Access to the template definition is possible\n        definition {\n          type\n          shared\n        }\n      }\n    }\n  }\n\n  # Context/route item query\n  # $contextItem will always be set to the ID of the current context item (the route item)\n  # (as long as the GraphQLData helper is used)\n  contextItem: item(path: $contextItem, language: $language) {\n    id\n    # Get the page title from the app route template\n    ...on AppRoute {\n      pageTitle {\n        value\n      }\n    }\n\n    # List the children of the current route\n    children(hasLayout: true) {\n      results {\n        id\n        # typing fragments can be used anywhere!\n        # so in this case, we're grabbing the 'pageTitle'\n        # field on all child route items.\n        ...on AppRoute {\n          pageTitle {\n            jsonValue\n            value\n          }\n        }\n        url{\n          path\n        }\n      }\n    }\n  }\n}\n",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "GraphQL-IntegratedDemo"
+    },
+    {
+      "name": "GraphQL-Layout",
+      "icon": "Office/16x16/layout.png",
+      "exposedPlaceholders": [
+        "jss-graphql-layout"
+      ],
+      "dataSourceTemplate": ""
+    },
+    {
+      "name": "Styleguide-ComponentParams",
+      "icon": "Office/16x16/window_dialog.png",
+      "params": [
+        {
+          "name": "cssClass",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "columns",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "useCallToAction",
+          "type": "Single-Line Text"
+        }
+      ],
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-ComponentParams"
+    },
+    {
+      "name": "Styleguide-CustomRouteType",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": ""
+    },
+    {
+      "name": "Styleguide-Layout-Reuse",
+      "icon": "Office/16x16/documents_exchange.png",
+      "exposedPlaceholders": [
+        "jss-reuse-example"
+      ],
+      "dataSourceTemplate": "Styleguide-Layout-Reuse"
+    },
+    {
+      "name": "Styleguide-Layout-Tabs-Tab",
+      "icon": "Office/16x16/tab_pane.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-Layout-Tabs-Tab"
+    },
+    {
+      "name": "Styleguide-Layout-Tabs",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [
+        "jss-tabs"
+      ],
+      "dataSourceTemplate": "Styleguide-Layout-Tabs"
+    },
+    {
+      "name": "Styleguide-Layout",
+      "icon": "Office/16x16/layout.png",
+      "exposedPlaceholders": [
+        "jss-styleguide-layout"
+      ],
+      "dataSourceTemplate": ""
+    },
+    {
+      "name": "Styleguide-Multilingual",
+      "icon": "Office/16x16/flag_generic.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-Multilingual"
+    },
+    {
+      "name": "Styleguide-RouteFields",
+      "icon": "Office/16x16/text_field.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-RouteFields"
+    },
+    {
+      "name": "Styleguide-Section",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [
+        "jss-styleguide-section"
+      ],
+      "dataSourceTemplate": "Styleguide-Section"
+    },
+    {
+      "name": "Styleguide-SitecoreContext",
+      "icon": "Office/16x16/control_panel.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "Styleguide-SitecoreContext"
+    }
+  ],
+  "wipeExisting": false,
+  "rootPlaceholders": [
+    "jss-main"
+  ]
+}
